@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d99058;
+    background-image: linear-gradient(315deg, #d99058 0%, #f8de7e 74%);
+}
+
+.menu {
+    display: flex;  
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.menu li {
+    width: 50px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    width: 180px;
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.textoMenu {
+    display: none;
+    color: rgb(255, 255, 255);
+    transition: all ease 1s;
+}
+
+.menu li:hover .textoMenu {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.icone {
+    width: 25px;
+}
+
+.menu li:hover .icone {
+    display: none;
+}
+
+#itemHome:hover {
+    background-color: #9400d3;/*Caso o browser nao seja compativel com linear gradient*/
+    background: linear-gradient(90deg, #9400d3, #cb51ff)
+}
+
+#itemLigar:hover {
+    background-color: #229a00;/*Caso o browser nao seja compativel com linear gradient*/
+    background: linear-gradient(90deg, #26ab01, #38f106)
+}
+
+#itemMensagem:hover {
+    background-color: #ff8c00;/*Caso o browser nao seja compativel com linear gradient*/
+    background: linear-gradient(90deg, #f24f00, #ff9e29)
+}
+
+#itemContato:hover {
+    background-color: #4169e1;/*Caso o browser nao seja compativel com linear gradient*/
+    background: linear-gradient(90deg, #2b51c3, #4a76fc)
+}
+
+#itemDefinicoes:hover {
+    background-color: #ff69b4;/*Caso o browser nao seja compativel com linear gradient*/
+    background: linear-gradient(90deg, #f03c96, #ff69b4)
+}
+
